@@ -5,6 +5,8 @@ public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    private String cours;
+    
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -30,10 +32,14 @@ public class Student {
         return this.yearOfBirth;
     }
     
-    public Info(){
-        this.firstName = "Darko";
-        this.lastName = "Dumanjic";
-        this.yearOfBirth = 1984;
+    public void info(){
+        System.out.println("First name is: " + getFirstName());
+        System.out.println("Last name is: " + getLastName());
+        System.out.println("Year of birth is: " + getYearOfBirth());
+    }
+    
+    public String getCours() {
+        return this.cours;
     }
 
 }
