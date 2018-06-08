@@ -1,7 +1,7 @@
 
-package cours;
+package course;
 
-public class Cours {
+public class Course {
     private String name;
     private int numberOfClasses;
     
@@ -21,12 +21,12 @@ public class Cours {
         return this.numberOfClasses;
     }
 
-    public Cours() {
+    public Course() {
         this.name = "no name";
         this.numberOfClasses = 0;
     }
 
-    public Cours(String name, int numberOfClasses) {
+    public Course(String name, int numberOfClasses) {
         this.name = name;
         this.numberOfClasses = numberOfClasses;
     }
