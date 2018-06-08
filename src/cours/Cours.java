@@ -20,5 +20,17 @@ public class Cours {
     public int getnumberOfClasses() {
         return this.numberOfClasses;
     }
+
+    public Cours() {
+        this.name = "no name";
+        this.numberOfClasses = 0;
+    }
+
+    public Cours(String name, int numberOfClasses) {
+        this.name = name;
+        this.numberOfClasses = numberOfClasses;
+    }
+    
+    
     
 }

@@ -30,4 +30,10 @@ public class Computer {
         return this.hardDrive;
     }
     
+    public void info(){
+        System.out.println("Proces takt " + getProcesTact());
+        System.out.println("Memory " + getMemory());
+        System.out.println("Hard drive " + getHardDrive());
+    }
+    
 }
