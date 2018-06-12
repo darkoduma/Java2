@@ -1,11 +1,21 @@
-
 package computer;
 
 public class Computer {
+
     private double procesTact;
     private double memory;
     private int hardDrive;
-    
+
+    public Computer() {
+
+    }
+
+    public Computer(double procesTact, double memory, int hardDrive) {
+        this.procesTact = procesTact;
+        this.memory = memory;
+        this.hardDrive = hardDrive;
+    }
+
     public void setProcesTact(Double procesTact) {
         this.procesTact = procesTact;
     }
@@ -29,11 +39,11 @@ public class Computer {
     public int getHardDrive() {
         return this.hardDrive;
     }
-    
-    public void info(){
+
+    public void info() {
         System.out.println("Proces takt " + getProcesTact());
         System.out.println("Memory " + getMemory());
         System.out.println("Hard drive " + getHardDrive());
     }
-    
+
 }

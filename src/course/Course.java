@@ -31,6 +31,12 @@ public class Course {
         this.numberOfClasses = numberOfClasses;
     }
     
+    public void info(){
+        System.out.println("Course name: " + getName());
+        System.out.println("Course, number of classes: " + getnumberOfClasses());
+    }
+    
+    
     
     
 }

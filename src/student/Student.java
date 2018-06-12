@@ -1,7 +1,7 @@
 package student;
-import computer.Computer;
-import course.Course; 
 
+import computer.Computer;
+import course.Course;
 
 public class Student {
 
@@ -36,22 +36,24 @@ public class Student {
         this.course = course;
         this.computer = computer;
     }
-    
-    
-    
-    public Course getCourse(){
-        return this.course; 
+
+    public Student(String marko, String markovic, int i, Course courseQA) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Course getCourse() {
+        return this.course;
     }
 
     public void setComputer(Computer computer) {
         this.computer = computer;
     }
-    
+
     public Computer getComputer() {
         return computer;
-        
+
     }
-    
+
     public void setCourse(Course course) {
         this.course = course;
     }
@@ -84,16 +86,14 @@ public class Student {
         System.out.println("First name is: " + getFirstName());
         System.out.println("Last name is: " + getLastName());
         System.out.println("Year of birth is: " + getYearOfBirth());
+
         System.out.println("Computer, hard drive: " + getComputer().getHardDrive());
         System.out.println("Computer, memory: " + getComputer().getMemory());
         System.out.println("Computer, proces tact " + getComputer().getProcesTact());
-        
+
         System.out.println("Course, name: " + getCourse().getName());
         System.out.println("Course, number of classes: " + getCourse().getnumberOfClasses());
-        
-        
-    }
 
-    
+    }
 
 }
